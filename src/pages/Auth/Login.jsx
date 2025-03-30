@@ -8,7 +8,6 @@ const Login = () => {
 	const handleSubmit = async (values) => {
 		try {
 			const response = await login(values);
-			console.log("response",response)
 			if(response.success)
 			{
 			toast.success("Login successful!");

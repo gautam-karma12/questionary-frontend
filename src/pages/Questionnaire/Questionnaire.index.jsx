@@ -23,13 +23,11 @@ const Questionnaire = () => {
   const [filteredQuestions, setFilteredQuestions] = useState([]);
   const [showSummary, setShowSummary] = useState(false);
   
-  // Create initial values object
   const initialValues = questions.reduce((acc, question) => {
     acc[question.name] = "";
     return acc;
   }, {});
   
-  // Create validation schema
   const validationSchema = Yup.object().shape(
     questions.reduce((acc, question) => {
       if (question.required) {
@@ -61,7 +59,6 @@ const Questionnaire = () => {
     }
 
     if (currentStep === 2) {
-      // Update filtered questions based on conditional logic
       if (values.name && !values.age) {
         setFilteredQuestions(questions.filter(q => q.condition === "name"));
       } else if (!values.name && values.age) {
@@ -95,7 +92,6 @@ const Questionnaire = () => {
   
   const handleLogout = () => {
     const response = signOut();
-    console.log("response: ", response);
     if (response.success) {
       toast.success("Logged out successfully!");
       navigate("/");
@@ -144,7 +140,6 @@ const Questionnaire = () => {
               ) : (
                 <>
                   {filteredQuestions.map((question) => {
-                    // Show petType question only if hasPets is "Yes"
                     if (question.name === "petType" && values.hasPets !== "Yes") {
                       return null;
                     }
