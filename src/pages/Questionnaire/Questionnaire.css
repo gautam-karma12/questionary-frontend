@@ -1,0 +1,132 @@
+/* App.css */
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    background: #ccc;
+    height: 10px;
+    border-radius: 5px;
+    margin: 20px 0;
+    overflow: hidden;
+  }
+  
+  .progress {
+    background: #4caf50;
+    height: 100%;
+    transition: width 0.3s;
+  }
+  
+  .question-card {
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  h3 {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .answer-btn {
+    margin: 10px 5px;
+    padding: 10px 20px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+  }
+  
+  .answer-btn:hover {
+    background: #0056b3;
+  }
+  
+  .answer-btn.selected {
+    background: #28a745;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    background: #f39c12;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background: #e67e22;
+  }
+  
+  .btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .next-btn {
+    background: #28a745;
+  }
+  
+  .next-btn:hover {
+    background: #218838;
+  }
+  
+  .submit-btn {
+    background: #4caf50;
+  }
+  
+  .submit-btn:hover {
+    background: #45a049;
+  }
+  
+  .summary {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  .error-message{
+    color: red;
+    margin-top: 1px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  .summary-item {
+    background: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+  }
+  
